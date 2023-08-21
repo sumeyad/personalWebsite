@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sumeya Dahir's Website</title>
+  <style>
+    .header {
+      display: inline-block; /* Display headers inline */
+      margin: 0; /* Reset margin */
+    }
+    .buttons-container {
+      float: right; /* Float buttons to the right */
+    }
+    .button {
+      background-color: white;
+      color: darkslategrey;
+      padding: 5px 10px;
+      border: 1px solid darkslategrey;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    img {
+      float: left;
+      width: 300px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .content {
+      clear: both; /* Clear the float */
+      padding: 20px;
+    }
+    .image-container {
+      float: left;
+      width: 300px;
+      height: auto;
+      margin-right: 20px;
+      position: relative; /* Required for positioning the hover image */
+    }
+    .hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s ease; /* Smooth transition */
+    }
+    .image-container:hover .hover-image {
+      opacity: 1; /* Show hover image on hover */
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Sumeya</h1>
+    <h2><i>Dahir</i></h2>
+  </header>
+  <nav class="buttons-container">
+    <a href="https://www.linkedin.com/in/sumeya-dahir/" class="button">LinkedIn</a>
+    <a href="https://github.com/sumeyad" class="button">GitHub</a>
+    <a href="https://www.instagram.com/kksumeya/" class="button">Instagram</a>
+    <a href="mailto:sumeyadahir08@gmail.com" class="button">Email</a>
+  </nav>
+  <main class="content">
+    <section class="intro">
+      <div class="image-container">
+        <img src="C:\Users\sumey\Downloads\babyme.jpg.jpg" alt="Picture of Sumeya as a baby"> <!-- Use relative path -->
+        <img class="hover-image" src=""C:\Users\sumey\Downloads\peace.jpg"" alt="Hovered Image"> <!-- Use relative path -->
+      </div>
+      <p>Welcome to my personal website! I'm Sumeya Dahir, and I'm passionate about... (introduce yourself and your interests).</p>
+    </section>
+    <section class="projects">
+      <h3>My Projects</h3>
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <h4>Project 1</h4>
+        <p>Description of the project and your role.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <h4>Project 2</h4>
+        <p>Description of the project and your role.</p>
+      </div>
+      <!-- Add more project sections as needed -->
+    </section>
+    <section class="blog">
+      <h3>My Blog</h3>
+      <div class="blog-post">
+        <h4>Blog Post Title</h4>
+        <p>Summary of your blog post content. Keep it engaging and informative.</p>
+      </div>
+      <div class="blog-post">
+        <h4>Another Blog Post Title</h4>
+        <p>Summary of your another blog post. Share your thoughts and insights.</p>
+      </div>
+      <!-- Add more blog posts as needed -->
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Sumeya Dahir. All rights reserved.</p>
+  </footer>
+</body>
+</html>
